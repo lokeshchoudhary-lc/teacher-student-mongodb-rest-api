@@ -6,6 +6,8 @@ const createError = require('http-errors');
 
 require('dotenv').config();
 
+require('./db/index');
+
 const app = express();
 
 const PORT = process.env.PORT || 5000;
