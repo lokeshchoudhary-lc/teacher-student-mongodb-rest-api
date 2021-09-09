@@ -20,6 +20,12 @@ app.get('/', (_req, res) => {
   res.send('Hello World 😀');
 });
 
+const studentRoute = require('./routes/student.route');
+const teacherRoute = require('./routes/teacher.route');
+
+app.use('/student', studentRoute);
+app.use('/teacher', teacherRoute);
+
 app.use(async (_req, _res, next) => {
   const error = createError.NotFound();
   next(error);
