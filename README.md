@@ -91,6 +91,7 @@ _Route start with `http://localhost:5000/` or `http://localhost:<specified_PORT>
 | ----------------------- | ------ | -------------- | -------------------------------------- |
 | 'student/show-teacher/' | GET    | id(student id) | list of assigned teachers to a student |
 
+**_Example_ `student/show-teacher/`**<br>
 **_Example_ `student/show-teacher/?id=89381283nasf5e`**
 
 | Path                      | Method | Params         | Body                   | Action                                      |
